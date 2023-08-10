@@ -31,7 +31,7 @@ in two tries:
   i.e (try1 = 3, try2 = 7)
   -> score = 10 + total number of pins knocked down in the next throw 
   i.e 
-  1(3, 7) , 
+  1(3, 7) , -> 'spare'
   2 (5, 1),
 
   total score = 10 + 5 = 15
@@ -41,10 +41,16 @@ in first try:
 
   bowler knocks down all pins, it is a 'strike'
   his turn is over -> score = 10 + total of pins knocked down in next two rolls 
+  i.e 
+  1(10), -> 'strike'
+  2(2, 1),
+
+  total score = 10 + 3 = 13
 
 
 if 
-bowler gets 'strike' or 'spare in the 10th frame, he gets to throw one or two extra balls. 
+bowler gets 'strike' or 'spare in the 10th frame, he gets to throw 
+  one ball  - 'spare'  or two extra balls - 'strike'. 
 
   if bonus throw knocks all pins down - no more throws 
 
