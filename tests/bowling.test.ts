@@ -67,4 +67,48 @@ describe("bowlingScore function", () => {
     expect(bowlingScore(arr1)).toBe(19);
   }); 
 
+  it("tests an array with a spare on the 10th frame, returns count", () => {
+    const arr : Array<number> = [
+      0,0,
+      0,0,
+      0,0,
+      0,0,
+      0,0,
+      0,0,
+      0,0,
+      0,0,
+      0,0,
+      9,1,3
+    ];
+
+    const arr1 : Array<number> = [
+      0,0,
+      0,0,
+      5,5,
+      1,0,
+      0,0,
+      0,0,
+      0,0,
+      0,0,
+      0,0,
+      5,5,2
+    ];
+
+    const arr2 : Array<number> = [
+      1,0,
+      1,0,
+      5,5,
+      1,0,
+      0,0,
+      3,7,
+      0,0,
+      0,0,
+      0,0,
+      5,5,2
+    ];
+    expect(bowlingScore(arr)).toBe(13);
+    expect(bowlingScore(arr1)).toBe(24);
+    expect(bowlingScore(arr2)).toBe(36);
+  }); 
+
 });

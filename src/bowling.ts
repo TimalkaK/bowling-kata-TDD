@@ -2,6 +2,8 @@
 
  export function bowlingScore(arr : Array<number>){
 
+  //console.log(arr.length);
+
   if(arr.length === 0){
     return 0;
   }
@@ -22,9 +24,15 @@
 
     count += sum;
 
-    if(sum === 10){
-       count += arr[i + 2];
+    //console.log(i);
+    //console.log (i + " " + sum);
+
+    if(sum === 10 && i < 18){
+      count += arr[i + 2];
+      
     }
+    // currently, score of next throw to total score if there is a spare
+    // carry out spare logic except in the last frame
   }
 
   console.log(count);
