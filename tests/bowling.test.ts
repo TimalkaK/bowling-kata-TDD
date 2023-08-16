@@ -111,4 +111,35 @@ describe("bowlingScore function", () => {
     expect(bowlingScore(arr2)).toBe(36);
   }); 
 
+  it("tests an array with a strike, returns count", () => {
+    const arr : Array<number> = [
+      10,
+      1,3,
+      0,0,
+      0,0,
+      0,0,
+      0,0,
+      0,0,
+      0,0,
+      0,0,
+      0,0,
+    ];
+
+    const arr1 : Array<number> = [
+      10,
+      1,3,
+      0,0,
+      10,
+      5,1,
+      0,0,
+      0,0,
+      0,0,
+      0,0,
+      0,0,
+    ];
+    expect(bowlingScore(arr)).toBe(18);
+    expect(bowlingScore(arr1)).toBe(40);
+  }); 
+
+
 });
