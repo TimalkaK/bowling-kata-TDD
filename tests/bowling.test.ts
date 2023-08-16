@@ -50,6 +50,21 @@ describe("bowlingScore function", () => {
       0,0,
       0,0,
     ];
+
+    const arr1 : Array<number> = [
+      7,0,
+      1,9,
+      1,0,
+      0,0,
+      0,0,
+      0,0,
+      0,0,
+      0,0,
+      0,0,
+      0,0,
+    ];
     expect(bowlingScore(arr)).toBe(13);
+    expect(bowlingScore(arr1)).toBe(19);
   }); 
+
 });
